@@ -46,4 +46,4 @@ Contributions, issues, and feature requests are welcome. Feel free to check the 
 
 ## License
 
-This module is released under the [GPL-3](https://www.odoo.com/documentation/13.0/legal/licenses/licenses.html) license.
+This module is released under the [GPL-3] license.
