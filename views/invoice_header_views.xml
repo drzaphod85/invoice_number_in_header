@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_inherited" inherit_id="account.report_invoice_document">
+        <xpath expr="//t[@t-call='web.external_layout']" position="before">
+            <t t-if="context.get('show_invoice_number_on_all_pages', False) and context.get('invoice_number')">
+                <div class="header" style="border-bottom: 1px solid black; margin-bottom: 10px; padding-bottom: 5px;">
+                    <span t-esc="'Fakturanummer: ' + context.get('invoice_number', '')"/>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>
